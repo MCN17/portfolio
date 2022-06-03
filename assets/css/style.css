@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #595b61;
+    padding: 10px;
+    margin: 0px;
+}
+
+header nav {
+    margin: 10px 0;
+}
+
+header nav ul {
+    font-size: 30px;
+    list-style: none;
+    justify-content: center;
+    padding: 5px 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    padding: 0 20px;
+    color: silver;
+    font-weight: bold;
+}
