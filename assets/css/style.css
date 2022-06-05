@@ -7,24 +7,27 @@
 
 /* Nav Style Start */
 
-nav {
+header {
     background-color: #595b61;
     padding: 10px;
     margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-nav ul {
+
+header nav ul {
     font-family: monospace;
     font-size: 30px;
     padding: 5px 10px;
     margin: 10px 0;
     list-style: none;
-    justify-content: center;
     display: flex;
     flex-wrap: wrap;
 }
 
-nav ul li {
+header nav ul li {
     padding: 0 20px;
     color: silver;
     font-weight: bold;
@@ -34,27 +37,23 @@ nav ul li {
 
 /* Header Style Start */
 
-header {
-    background-color: #2e3449;
-}
-
 header h1 {
     font-family: Arial, Helvetica, sans-serif;
     color: silver;
-    font-size: 100px;
+    font-size: 50px;
     text-align: center;
     margin: 5px 0 px 0;
 
 }
 
-header h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: silver;
-    font-weight: lighter;
-    font-size: 30px;
-    text-align: center;
-    border-bottom: solid 2px #595b61;
-    border-radius: 50%;
+
+.about img {
+    width: 10%;
+    height: 10%;
+    border: solid 2px;
+    border-radius: 150px;
+    margin: 10px;
+    float: left;
 }
 
 /* Header Style End */
@@ -63,7 +62,7 @@ header h2 {
 /* About Section */
 
 main {
-    background-color: #e3e4e6;
+    background-color: #2e3449;
 }
 
 .about {
@@ -72,13 +71,7 @@ main {
     justify-content: center;
 }
 
-.about img {
-    width: 10%;
-    height: 10%;
-    border: solid 2px;
-    border-radius: 150px;
-    margin: 10px;
-}
+
 
 .about-para {
     margin: 10px;
@@ -89,15 +82,15 @@ main {
     color: silver;
     font-weight: lighter;
     font-size: 35px;
-    text-align: center;
+    text-align: left;
     margin: 25px 0 10px 0;
-    border-bottom: solid 2px #2e3449;
+    
 }
 
 .about-para p {
     font-family: Arial, Helvetica, sans-serif;
-    color: #2e3449;
-    text-align: center;
+    color: silver;
+    text-align: left;
 }
 
 /* Footer Style Start */
@@ -105,3 +98,69 @@ main {
 footer {
     background-color: #e3e4e6;
 }
+
+/* Projects Style Start */
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.projects h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin: 0 0 10px 0;
+    border-bottom: solid 2px #2e3449;
+}
+
+.projects h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+       
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 4px;
+    column-gap: 4px;
+}
+
+.html-card {
+    width: 1000px;
+    height: 500px;
+    border: solid 4px silver;
+    flex-basis: 80%;
+    background-image: url(../images/run-buddy-image.jpg);
+    background-size: cover;
+}
+
+.css-card {
+    width: 500px;
+    height: 250px;
+    border: solid 4px silver;
+    background-image: url(../images/horiseon-image.png);
+    background-size: cover;
+}
+
+.javascript-card {
+    width: 500px;
+    height: 250px;
+    border: solid 4px silver;
+}
+
+.games-card {
+    width: 500px;
+    height: 250px;
+    border: solid 4px silver;
+}
+
+
+
+
+   
