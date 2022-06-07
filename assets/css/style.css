@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 
@@ -69,37 +70,41 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    line-height: 2;
+    width: 100%;
+
 }
 
 
 
 .about-para {
-    margin: 10px;
+    margin: 20px;
+    text-align: center;
 }
 
 .about-para h3 {
     font-family: Arial, Helvetica, sans-serif;
     color: silver;
-    font-weight: lighter;
-    font-size: 35px;
-    text-align: left;
+    font-weight: darker;
+    font-size: 40px;
     margin: 25px 0 10px 0;
+    text-align: center;
     
 }
 
 .about-para p {
     font-family: Arial, Helvetica, sans-serif;
     color: silver;
-    text-align: left;
+    font-size: 20px;
 }
 
 /* Footer Style Start */
 
-footer {
-    background-color: #e3e4e6;
-}
+
 
 /* Projects Style Start */
+
+/* .projects selector may not be needed!
 
 .projects {
     display: flex;
@@ -107,6 +112,8 @@ footer {
     justify-content: center;
     width: 100%;
 }
+
+*/
 
 .projects h3 {
     font-family: Arial, Helvetica, sans-serif;
@@ -132,35 +139,54 @@ footer {
 }
 
 .html-card {
-    width: 1000px;
+    width: 100%;
     height: 500px;
     border: solid 4px silver;
     flex-basis: 80%;
-    background-image: url(../images/run-buddy-image.jpg);
-    background-size: cover;
-}
-
-.css-card {
-    width: 500px;
-    height: 250px;
-    border: solid 4px silver;
     background-image: url(../images/horiseon-image.png);
     background-size: cover;
 }
 
+.css-card {
+    width: 40%;
+    height: 400px;
+    border: solid 4px silver;
+    background-image: url(../images/run-buddy-image.jpg);
+    background-size: cover;
+}
+
 .javascript-card {
-    width: 500px;
-    height: 250px;
+    width: 40%;
+    height: 400px;
     border: solid 4px silver;
 }
 
 .games-card {
-    width: 500px;
-    height: 250px;
+    width: 40%;
+    height: 400px;
     border: solid 4px silver;
 }
 
 
+
+footer {
+    background-color: #3db1a3;
+}
+
+footer ul {
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 5px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+footer ul li {
+    padding: 0 20px;
+}
 
 
    
