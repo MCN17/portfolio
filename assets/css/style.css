@@ -1,3 +1,9 @@
+:root {
+    --main-color: #2e3449;
+    --main-font-color: silver;
+    --main-font-style: Arial, Helvetica, sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +12,7 @@
 }
 
 
-/* Nav Style Start */
+/* Header Style Start */
 
 header {
     background-color: #595b61;
@@ -15,6 +21,9 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 }
 
 
@@ -30,17 +39,25 @@ header nav ul {
 
 header nav ul li {
     padding: 0 20px;
-    color: silver;
+    color: var(--main-font-color);
     font-weight: bold;
 }
 
-/* Nav Style End */
+header nav ul li a {
+    text-decoration: none;
+    color: var(--main-font-color);
+}
 
-/* Header Style Start */
+header nav ul li a:hover {
+    background-color: var(--main-color);
+    border-radius: 20px;
+    padding: 10px;
+}
+
 
 header h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: silver;
+    font-family: var(--main-font-style);
+    color: var(--main-font-color);
     font-size: 50px;
     text-align: center;
     margin: 5px 0 px 0;
@@ -59,11 +76,12 @@ header h1 {
 
 /* Header Style End */
 
+
 /* Main Style Start */
 /* About Section */
 
 main {
-    background-color: #2e3449;
+    background-color: var(--main-color);
 }
 
 .about {
@@ -71,36 +89,34 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     line-height: 2;
-    width: 100%;
-
 }
 
 
 
 .about-para {
-    margin: 20px;
+    margin: 20px 100px 20px 100px;
     text-align: center;
+    width: 80%;
+    padding-bottom: 50px;
 }
 
 .about-para h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: silver;
+    font-family: var(--main-font-style);
+    color: var(--main-font-color);
     font-weight: darker;
     font-size: 40px;
-    margin: 25px 0 10px 0;
+    margin-top: 25px;
     text-align: center;
     
 }
 
 .about-para p {
-    font-family: Arial, Helvetica, sans-serif;
-    color: silver;
+    font-family: var(--main-font-style);
+    color: var(--main-font-color);
     font-size: 20px;
 }
 
-/* Footer Style Start */
-
-
+/* Main Style End */
 
 /* Projects Style Start */
 
@@ -116,15 +132,16 @@ main {
 */
 
 .projects h3 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--main-font-style);
+    color: var(--main-font-color);
     font-size: 35px;
     text-align: center;
     margin: 0 0 10px 0;
-    border-bottom: solid 2px #2e3449;
+    padding-bottom: 5px;
 }
 
 .projects h4 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--main-font-style);
     font-size: 20px;
     text-align: center;
        
@@ -147,6 +164,28 @@ main {
     background-size: cover;
 }
 
+
+.project-cards a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.project-cards a:hover {
+    opacity: 1;
+}
+
+.project-card-text {
+    background-color: var(--main-color);
+    font-size: 30px;
+    color: silver;
+    opacity: 0.7;
+}
+
+
 .css-card {
     width: 40%;
     height: 400px;
@@ -167,7 +206,9 @@ main {
     border: solid 4px silver;
 }
 
+/*Projects Style End */
 
+/*Footer Style Start */
 
 footer {
     background-color: #3db1a3;
@@ -185,8 +226,35 @@ footer ul {
 }
 
 footer ul li {
-    padding: 0 20px;
+    padding: 15px 20px;
 }
 
+footer a {
+    text-decoration: none;
+    color: black;
+}
 
-   
+/*Footer Style End */
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+
+@media screen and (max-width: 980px) {
+    
+    header {
+        width: 100%;
+        justify-content: center;
+        position: relative;
+    }
+
+    header nav ul {
+        width: 100%;
+        text-align: center;
+    }
+    
+
+    .about img {
+        width:20%;
+        height:20%;
+    }
+}
