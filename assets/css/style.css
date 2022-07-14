@@ -147,7 +147,7 @@ main {
     height: 500px;
     border: solid 4px silver;
     flex-basis: 80%;
-    background-image: url(../images/horiseon-image.png);
+    background-image: url(../images/topstocks.png);
     background-size: cover;
 }
 
@@ -193,7 +193,7 @@ main {
     width: 40%;
     height: 400px;
     border: solid 4px silver;
-    background-image: url(../images/topstocks.png);
+    background-image: url(../images/horiseon-image.png);
     background-size: cover;
 }
 
