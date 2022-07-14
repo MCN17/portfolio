@@ -193,7 +193,7 @@ main {
     width: 40%;
     height: 400px;
     border: solid 4px silver;
-    background-image: url(../images/transformer.jpg);
+    background-image: url(../images/topstocks.png);
     background-size: cover;
 }
 
@@ -287,6 +287,7 @@ header nav ul li a:hover {
         background-position: right;
     }
 }
+
 
 
 
